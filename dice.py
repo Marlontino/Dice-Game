@@ -1,6 +1,21 @@
-import random
-import time
+import random, time, sys
 
+# Main interface for the game
+def main():
+    print("Welcome to Niko's Dice Simulator!")
+    print('Enjoy!')
+
+    print()
+    print()
+    print("Press 'r' to roll your die.")
+    print("Enter 'q' to end the program")
+    user_input = input()
+
+    if user_input == "q":
+         sys.exit()
+    else:
+         roll()
+         main()
 #logic for visualization of dice
 def dice(a):
     if (a==1):
@@ -71,17 +86,5 @@ def roll():
 
     print('---------------\n')
 
-#GUI
-while True:
-    print("Welcome to Niko's Dice Simulator!")
-    print('Enjoy!')
-    print()
-    print()
-    print("Press 'r' to roll your die.")
-    print("Enter 'q' to end the program")
-    user_input = input()
-
-    if user_input == "q":
-        break
-    else:
-        roll()
+if __name__ == '__main__':
+    main()
