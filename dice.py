@@ -46,7 +46,6 @@ def dice(a):
         print('|  •  •  |')
         print('|        |\n')
 
-
     elif (a==5):
         print('|       |')
         print('|  • •  |')
